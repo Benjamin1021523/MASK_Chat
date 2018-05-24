@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Gogo Chat</string>
+    <string name="welcome_msg">歡迎!</string>
+    <string name="sign_out">登出</string>
+    <string name="contacts_permission_rationale">Access to account information is required to sign in.</string>
+    <string name="invite_menu_label">邀請</string>
+    <string name="invitation_message">Please join me for a friendly chat</string>
+    <string name="invitation_cta">Call to action</string>
+    <string name="invitation_title">Friendly Chat Invite</string>
+    <string name="sign_in">登入</string>
+    <string name="sign_up">註冊</string>
+    <string name="fresh_config">連線更新</string>
+    <string name="cause_crash">Cause Crash</string>
+    <string name="version">版本</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

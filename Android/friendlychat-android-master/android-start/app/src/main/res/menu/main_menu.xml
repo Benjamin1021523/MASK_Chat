@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/sign_out_menu"
         android:title="@string/sign_out"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
     <item
         android:id="@+id/fresh_config_menu"
         android:title="@string/fresh_config"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
     <item
         android:id="@+id/invite_menu"
         android:title="@string/invite_menu_label"
-        app:showAsAction="never"/>
+        android:visible="false"
+        app:showAsAction="never" />
     <item
         android:id="@+id/crash_menu"
-        android:title="@string/cause_crash"/>
+        android:title="@string/cause_crash"
+        android:visible="false" />
+    <item
+        android:id="@+id/version_menu"
+        android:title="@string/version"
+        app:showAsAction="never" />
 </menu>
