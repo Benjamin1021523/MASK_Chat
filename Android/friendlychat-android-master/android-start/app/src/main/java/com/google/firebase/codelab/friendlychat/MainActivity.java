@@ -319,7 +319,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void version() {
-        Toast toast = Toast.makeText(this, "目前版本為v1.0.0", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this,R.string.version_data, Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -362,8 +362,10 @@ public class MainActivity extends AppCompatActivity
                 return true;
             case R.id.sign_out_menu:
                 mFirebaseAuth.signOut();
+                Auth.GoogleSignInApi.signOut(mGoogleApiClient);
                 mUsername = ANONYMOUS;
                 startActivity(new Intent(this, SignInActivity.class));
+                finish();
                 return true;
             case R.id.version_menu:
                 version();
@@ -483,12 +485,6 @@ public class MainActivity extends AppCompatActivity
                 InputFilter.LengthFilter(friendly_msg_length.intValue())});
         Log.d(TAG, "FML is: " + friendly_msg_length);
     }
-    private void sendInvitation() {
-        Intent intent = new AppInviteInvitation.IntentBuilder(getString(R.string.invitation_title))
-                .setMessage(getString(R.string.invitation_message))
-                .setCallToActionText(getString(R.string.invitation_cta))
-                .build();
-        startActivityForResult(intent, REQUEST_INVITE);
-    }
+
 
 }

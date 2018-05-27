@@ -12,5 +12,7 @@
     <string name="fresh_config">Fresh Config</string>
     <string name="cause_crash">Cause Crash</string>
     <string name="version">version</string>
+    <string name="version_data">The last version is ver1.0.0</string>
+    <string name="sendbutton">SEND</string>
     <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
 </resources>

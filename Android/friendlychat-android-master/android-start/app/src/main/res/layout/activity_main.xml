@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:enabled="false"
-            android:text="發送" />
+            android:text="@string/sendbutton" />
 
     </LinearLayout>
 
